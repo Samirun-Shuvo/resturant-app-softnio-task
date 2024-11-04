@@ -6,7 +6,8 @@ const Button = ({ children }) => {
       style={{
         background: "rgba(254, 191, 0, 1)",
         color: "black",
-        border: "none", // Optional: Remove default border
+        border: "none",
+        textTransform: "uppercase", // Ensures text is uppercase
       }}
     >
       {children}
@@ -15,3 +16,4 @@ const Button = ({ children }) => {
 };
 
 export default Button;
+

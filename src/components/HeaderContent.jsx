@@ -4,18 +4,18 @@ import vector from "../assets/header/vector.png"; // Ensure the path to the vect
 
 const HeaderContent = () => {
   return (
-    <header className="container mt-5 py-5">
+    <header className="container mt-4 py-4">
       <div className="row justify-content-center align-items-center g-4">
         <div className="col-md-6">
           <div className="text-start">
             <h2
-              className="display-4 fw-bold mb-4 ps-3"
+              className="display-4 fw-bold mb-4 ps-2 ps-md-3"
               style={{ color: "#FFFFFF", lineHeight: "1.2" }}
             >
               Taste the Authentic Saudi Cuisine
             </h2>
             <p
-              className="lead mb-4 ps-3"
+              className="lead mb-4 ps-2 ps-md-3"
               style={{
                 color: "#FFFFFF",
                 fontSize: "1.2rem",
