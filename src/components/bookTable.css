@@ -1,0 +1,9 @@
+.custom-date-input::placeholder {
+    color: rgba(255, 255, 255, 0.7); /* White placeholder with some opacity */
+  }
+  .custom-date-input {
+    background-color: transparent;
+    color: white;
+  }
+  
+  

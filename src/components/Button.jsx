@@ -2,10 +2,10 @@
 const Button = ({ children }) => {
   return (
     <div
-      className="btn ms-lg-3"
+      className="btn"
       style={{
         background: "rgba(254, 191, 0, 1)",
-        color: "black",
+        color: "white",
         border: "none",
         textTransform: "uppercase", // Ensures text is uppercase
       }}
