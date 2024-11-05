@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import logo from "../assets/logo/Logo.png";
 import Button from "./Button";
-import "./Navbar.css"; 
+import "./navbar.css"; 
 
 const Navbar = () => (
   <nav className="navbar navbar-expand-lg sticky-top text-white">
