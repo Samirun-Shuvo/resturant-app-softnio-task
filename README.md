@@ -28,16 +28,11 @@ Check out the public repositories of the application: https://github.com/Samirun
 
 **To run the project locally, follow these steps:**
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/Samirun-Shuvo/resturant-app-softnio-task.git
-2.Navigate to the project directory:
-  cd repo-name
-3. Install the dependencies:
-  npm install
-4. Start the development server:
-  npm run dev
-5. Open your browser and visit http://localhost:5173 to view the app.
+1. Clone the repository: git clone https://github.com/Samirun-Shuvo/resturant-app-softnio-task.git
+2. Navigate to the project directory: cd repo-name
+3. Install the dependencies: npm install
+4. Start the development server: npm run dev
+5. Open your browser and visit http://localhost:5173 to view the app
 
 
 ## Usage
