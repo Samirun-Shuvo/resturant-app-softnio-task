@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { tns } from "tiny-slider/src/tiny-slider";
-import "tiny-slider/dist/tiny-slider.css"; // Import Tiny Slider CSS
+import "tiny-slider/dist/tiny-slider.css";
 import burger from "../assets/popular-foods/burger.png";
 import pizza from "../assets/popular-foods/pizza.png";
 import frenchFries from "../assets/popular-foods/frenchfries.png";
@@ -15,24 +15,24 @@ const PopularFoods = () => {
   useEffect(() => {
     const slider = tns({
       container: ".my-slider",
-      items: 1, // Default number of items to show
-      slideBy: 1, // Slide by one item
-      autoplay: true, // Enable autoplay
-      autoplayButtonOutput: false, // Disable autoplay button
-      controls: false, // Disable built-in controls
-      nav: false, // Hide navigation dots
-      speed: 400, // Transition speed
+      items: 1,
+      slideBy: 1,
+      autoplay: true,
+      autoplayButtonOutput: false,
+      controls: false,
+      nav: false,
+      speed: 400,
       responsive: {
-        640: { items: 1 }, // Show 1 item on small devices
-        768: { items: 2 }, // Show 2 items on medium devices
-        1024: { items: 4 }, // Show 4 items on large devices
+        640: { items: 1 },
+        768: { items: 2 },
+        1024: { items: 4 },
       },
     });
 
-    sliderRef.current = slider; // Store the slider instance in ref
+    sliderRef.current = slider;
 
     return () => {
-      slider.destroy(); // Clean up the slider instance on unmount
+      slider.destroy();
     };
   }, []);
 
@@ -87,37 +87,25 @@ const PopularFoods = () => {
     },
   ];
 
-  // Button handlers for Previous and Next
-  const handlePrev = () => {
-    sliderRef.current.goTo("prev");
-  };
-
-  const handleNext = () => {
-    sliderRef.current.goTo("next");
-  };
+  const handlePrev = () => sliderRef.current.goTo("prev");
+  const handleNext = () => sliderRef.current.goTo("next");
 
   return (
     <div className="position-relative">
-      {/* Left Side Image */}
       <div
         className="d-none d-md-block position-absolute"
-        style={{
-          left: 0,
-          top: 110, // Adjusted for better positioning
-          zIndex: 1,
-        }}
+        style={{ left: 0, top: 110, zIndex: 1 }}
       >
         <img
           src={leftSideImg}
-          alt=""
-          className="img-fluid" // Responsive image class
-          style={{ maxWidth: "150px", height: "auto" }} // Maintain aspect ratio
+          alt="Decorative"
+          className="img-fluid"
+          style={{ maxWidth: "150px", height: "auto" }}
         />
       </div>
 
       <section className="container my-3 py-3">
         <div className="d-flex flex-column flex-md-row justify-content-between align-items-center my-4">
-          {/* Text Content */}
           <div className="text-start mb-3 mb-md-0">
             <p className="text-muted fw-semibold d-flex align-items-center mb-2">
               <i className="bi bi-square-fill text-danger me-2"></i>
@@ -129,8 +117,6 @@ const PopularFoods = () => {
           </div>
           {/* Navigation Controls */}
           <div className="d-none d-sm-flex align-items-center gap-3">
-            {" "}
-            {/* Hide on extra small devices, show on small and larger */}
             <button
               onClick={handlePrev}
               className="btn btn-outline-secondary p-2"
@@ -157,10 +143,11 @@ const PopularFoods = () => {
                       style={{ height: "200px", width: "250px" }}
                       src={img}
                       alt={title}
+                      className="img-fluid"
                     />
                     <div>
                       <h1 className="fw-bold mb-4 text-danger">___</h1>
-                      <h4 className="fw-bold">{title}</h4>{" "}
+                      <h4 className="fw-bold">{title}</h4>
                       <p>
                         <small>{desc}</small>
                       </p>
@@ -172,9 +159,8 @@ const PopularFoods = () => {
           ))}
         </div>
 
+        {/* Mobile Navigation Controls */}
         <div className="d-block d-md-none text-center mt-4">
-          {" "}
-          {/* Show on small devices only */}
           <div className="d-flex justify-content-center align-items-center gap-3">
             <button
               onClick={handlePrev}

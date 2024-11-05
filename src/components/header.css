@@ -1,0 +1,11 @@
+
+.header {
+  background: linear-gradient(
+    123.4deg,
+    #bd1f17 40.8%,
+    #a61d13 76.4%,
+    #8e1b0f 120.69%
+  );
+  opacity: 1;
+  min-height: 50vh;
+}

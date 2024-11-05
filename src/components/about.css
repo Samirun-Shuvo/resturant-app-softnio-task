@@ -1,0 +1,13 @@
+.about-section {
+  background-color: #f8f9fa;
+}
+
+.about-image,
+.contact-image {
+  border-radius: 15px;
+  max-width: 100%;
+}
+
+.tab-container {
+  border-radius: 15px;
+}

@@ -1,0 +1,24 @@
+.header-container {
+  color: #ffffff;
+}
+
+.header-title {
+  line-height: 1.2;
+}
+
+.header-description {
+  font-size: 1.2rem;
+  max-width: 500px;
+}
+
+.header-image {
+  border-radius: 15px;
+}
+
+.header-vector {
+  top: -30px;
+  right: 20px;
+  width: 60px;
+  height: auto;
+  opacity: 0.8;
+}
