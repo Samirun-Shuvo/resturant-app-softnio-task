@@ -1,16 +1,16 @@
 import Button from "./Button";
 import img from "../assets/header/header-img.png";
 import vector from "../assets/header/Vector.png";
-import "./headerContent.css"; 
+import "./headerContent.css";
 
 const HeaderContent = () => (
   <header className="header-container container mt-4 py-4">
     <div className="row justify-content-center align-items-center g-4">
       <div className="col-md-6 text-start">
-        <h2 className="header-title display-4 fw-bold mb-4 ps-2 ps-md-3">
+        <h2 className="header-title display-4 fw-bold mb-4 ">
           Taste the Authentic Saudi Cuisine
         </h2>
-        <p className="header-description lead mb-4 ps-2 ps-md-3">
+        <p className="header-description lead mb-4">
           Experience the finest flavors crafted by top Saudi chefs, offering an
           authentic culinary journey beyond expectation.
         </p>
