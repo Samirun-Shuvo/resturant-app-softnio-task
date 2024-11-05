@@ -3,6 +3,7 @@ import bg from "../assets/book-table/bg.jfif";
 import Button from "./Button";
 import "./bookTable.css";
 import { useState } from "react";
+import Swal from "sweetalert2"; // Import SweetAlert2
 
 const BookTable = () => {
   const [bookingData, setBookingData] = useState([]);
@@ -20,10 +21,19 @@ const BookTable = () => {
       setFormErrors(errors);
       return;
     }
+
     setBookingData((prevData) => [...prevData, data]);
     console.log([...bookingData, data]);
     setFormErrors({});
     event.target.reset();
+
+    // Show success alert
+    Swal.fire({
+      title: "Booking Successful!",
+      text: "Your table has been booked successfully.",
+      icon: "success",
+      confirmButtonText: "Okay",
+    });
   };
 
   const validateForm = (data) => {
