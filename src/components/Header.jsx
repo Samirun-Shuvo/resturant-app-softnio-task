@@ -1,6 +1,6 @@
 import HeaderContent from "./HeaderContent";
 import Navbar from "./Navbar";
-import "./Header.css";
+import "./header.css";
 
 const Header = () => (
   <header className="header text-white text-center" id="header">
