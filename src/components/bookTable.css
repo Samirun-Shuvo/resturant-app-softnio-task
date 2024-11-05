@@ -1,9 +1,16 @@
-.custom-date-input::placeholder {
-    color: rgba(255, 255, 255, 0.7); /* White placeholder with some opacity */
+
+  .date-placeholder {
+    color: #aaa;
   }
-  .custom-date-input {
-    background-color: transparent;
+
+  .date-placeholder::-webkit-calendar-picker-indicator {
+    filter: invert(1); /* Makes the calendar icon white */
+  }
+
+  /* Focused input customizations */
+  .date-input-focused {
     color: white;
+    background-color: transparent;
   }
   
   
