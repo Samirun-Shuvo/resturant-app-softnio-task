@@ -3,7 +3,7 @@ import image from "../assets/about/Image.png";
 import phoneNumber from "../assets/about/phone-number.png";
 import Button from "./Button";
 import AboutCards from "./AboutCards";
-import "./About.css";
+import "./about.css";
 
 const tabContents = {
   about: {
