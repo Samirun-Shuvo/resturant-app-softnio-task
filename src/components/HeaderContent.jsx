@@ -1,7 +1,7 @@
 import Button from "./Button";
 import img from "../assets/header/header-img.png";
-import vector from "../assets/header/vector.png";
-import "./HeaderContent.css"; 
+import vector from "../assets/header/Vector.png";
+import "./headerContent.css"; 
 
 const HeaderContent = () => (
   <header className="header-container container mt-4 py-4">
